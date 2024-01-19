@@ -2,7 +2,8 @@
     "name": "Mock PT",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "pxt-raycasting": "github:aqeeaqee/pxt-raycasting#v0.3.18"
     },
     "files": [
         "main.blocks",
@@ -27,13 +28,13 @@
     "preferredEditor": "blocksprj",
     "palette": [
         "#000000",
-        "#FFFFFF",
-        "#FF2121",
+        "#239B56",
+        "#D40909",
         "#6D6C6C",
         "#FF8135",
-        "#D40909",
+        "#FFFFFF",
         "#249CA3",
-        "#239B56",
+        "#1CF076",
         "#96817C",
         "#87F2FF",
         "#8E2EC4",
