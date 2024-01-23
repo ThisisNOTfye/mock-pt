@@ -3,7 +3,8 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "pxt-raycasting": "github:aqeeaqee/pxt-raycasting#v0.3.18"
+        "multiplayer": "*",
+        "arcade-mini-menu": "github:riknoll/arcade-mini-menu#96cf1014271246d15b85368b45f298bd8c6609c4"
     },
     "files": [
         "main.blocks",
@@ -25,7 +26,7 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "tsprj",
+    "preferredEditor": "blocksprj",
     "palette": [
         "#000000",
         "#239B56",
