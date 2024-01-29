@@ -72,10 +72,19 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
 	
 })
+function movement () {
+    controller.moveSprite(mySprite, 200, 200)
+}
+function camera_movement () {
+    scene.cameraFollowSprite(mySprite)
+}
 // THIS THE BOOST
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 	
 })
+function set_tile_map_CICUT_DE_MONACO () {
+    tiles.setCurrentTilemap(tilemap`level4`)
+}
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
     mySprite,
@@ -126,6 +135,15 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     false
     )
 })
+function spawn_point_nurburgring () {
+    tiles.placeOnTile(mySprite, tiles.getTileLocation(37, 213))
+}
+function nuburgring_map () {
+    tiles.setCurrentTilemap(tilemap`level0`)
+}
+function spawn_point () {
+    tiles.placeOnTile(mySprite, tiles.getTileLocation(27, 219))
+}
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
     mySprite,
@@ -176,6 +194,9 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     false
     )
 })
+function SPAWN_POINT_CIRCUIT_DE_MONACO () {
+    tiles.placeOnTile(mySprite, tiles.getTileLocation(88, 134))
+}
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
     mySprite,
@@ -247,6 +268,12 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     false
     )
 })
+function tile_map () {
+    tiles.setCurrentTilemap(tilemap`level`)
+}
+function tile_map_monaco () {
+    tiles.setCurrentTilemap(tilemap`level4`)
+}
 let mySprite: Sprite = null
 tiles.setCurrentTilemap(tilemap`level0`)
 mySprite = sprites.create(assets.image`myImage`, SpriteKind.Player)
